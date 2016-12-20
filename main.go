@@ -44,7 +44,6 @@ func create_handler(w http.ResponseWriter, r *http.Request) {
     fmt.Fprintf(w, URL_BASE + "tiny/" + short_url)
 }
 
-
 func list_handler(w http.ResponseWriter, r *http.Request) {
     json.NewEncoder(w).Encode(db)
 }
